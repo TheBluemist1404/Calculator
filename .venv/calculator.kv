@@ -1,0 +1,140 @@
+<Calculator>:
+    orientation: 'vertical'
+    size_hint: .4, None
+    height: self.width*7/4
+    pos_hint: {'center_x': .5, 'center_y':.5}
+    Display:
+        id: _display
+        scr: _scr
+        size_hint: 1, None
+        height: self.width*0.5
+        pos_hint: {'top': 0}
+        Label:
+            id: _scr
+            font_size: 30
+            text: "Calculator"
+
+    Keys:
+        display: _display
+        size_hint: 1, None
+        height: self.width*1.25
+        pos_hint: {'top': 1}
+        cols: 4
+        spacing: 10
+        padding: 10
+
+        ACWidget:
+            text_content: 'AC'
+            text_color: 0, 0, 0, 1  # Black
+            background_color: 197, 197, 197, 0.8 #Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        NegWidget:
+            text_content: '+/-'
+            text_color: 0, 0, 0, 1  # Black
+            background_color: 197, 197, 197, 0.8 #Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        PercentWidget:
+            text_content: '%'
+            text_color: 0, 0, 0, 1  # Black
+            background_color: 197, 197, 197, 0.8 #Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        Operators:
+            text_content: '/'
+            text_color: 1, 1, 1, 1  # White
+            background_color:  1.0, 0.6235294117647059, 0.0392156862745098, 1 #Mango
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '7'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '8'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '9'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        Operators:
+            text_content: 'x'
+            text_color: 1, 1, 1, 1  # White
+            background_color:  1.0, 0.6235294117647059, 0.0392156862745098, 1 #Mango
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '4'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '5'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '6'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        Operators:
+            text_content: '+'
+            text_color: 1, 1, 1, 1  # White
+            background_color:  1.0, 0.6235294117647059, 0.0392156862745098, 1 #Mango
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '1'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '2'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        CustomWidget:
+            text_content: '3'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        Operators:
+            text_content: '-'
+            text_color: 1, 1, 1, 1  # White
+            background_color:  1.0, 0.6235294117647059, 0.0392156862745098, 1 #Mango
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+
+        ZeroWidget:
+            text_content: '0           '
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/2-15, self.parent.height/5-12.5
+        DotWidget:
+            text_content: '.'
+            text_color: 1, 1, 1, 1  # White
+            background_color: 1, 1, 1, 0.15 #Dark Grey
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
+        EqWidget:
+            text_content: '='
+            text_color: 1, 1, 1, 1  # White
+            background_color:  1.0, 0.6235294117647059, 0.0392156862745098, 1 #Mango
+            size_hint: None, None
+            size: self.parent.width/4-12.5, self.parent.height/5-12.5
